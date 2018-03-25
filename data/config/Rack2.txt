@@ -1,0 +1,15 @@
+set system hostname Rack2
+set system login user UsEr authentication plain-text-password PassWord
+set system login user UsEr class super-user
+set interface em0 unit 0 family inet address 192.168.1.12/24
+set ntp server 172.16.11.11
+set vlans esxi vlan-id 1700
+set interfaces irb unit 1700 family inet 172.17.0.1/24
+set vlans esxi l3-interfaces irb.1700
+set vlans vmotion vlan-id 1701
+set interfaces irb unit 1701 family inet 172.17.1.1/24
+set vlans vmotion l3-interfaces irb.1701
+set vlans svc vlan-id 1702
+set interfaces irb unit 1702 family inet 172.17.2.1/24
+set vlans svc l3-interfaces irb.1702
+

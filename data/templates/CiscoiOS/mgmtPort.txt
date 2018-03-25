@@ -1,0 +1,3 @@
+interface gi0
+ip address {{ IP }} {{ mask }}
+!

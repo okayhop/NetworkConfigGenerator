@@ -1,0 +1,6 @@
+vlan {{ vlanID }}
+name {{ name }}
+!
+interface vlan{{ vlanID }}
+ip address {{ IP }} {{ mask }}
+!

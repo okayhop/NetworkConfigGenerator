@@ -1,0 +1,1 @@
+set ntp server {{ ntp }}

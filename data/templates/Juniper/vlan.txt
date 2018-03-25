@@ -1,0 +1,3 @@
+set vlans {{ name }} vlan-id {{ vlanID }}
+set interfaces irb unit {{ vlanID }} family inet {{ IP }}/{{ mask }}
+set vlans {{ name }} l3-interfaces irb.{{ vlanID }}

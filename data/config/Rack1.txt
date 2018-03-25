@@ -1,0 +1,25 @@
+hostname Rack1
+username user privilege 15 password 5 password
+interface gi0
+ip address 192.168.0.11 255.255.255.224
+!
+ntp server 172.16.11.11
+vlan 1600
+name esxi
+!
+interface vlan1600
+ip address 172.16.0.1 255.255.255.0
+!
+vlan 1601
+name vmotion
+!
+interface vlan1601
+ip address 172.16.1.1 255.255.255.0
+!
+vlan 1602
+name svc
+!
+interface vlan1602
+ip address 172.16.2.1 255.255.255.0
+!
+
